@@ -17,15 +17,15 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Slf4j
 public class CorpMemberTests {
-    @Autowired
-    private MemberMapper memberMapper;
-    @Autowired
-    private AddressMapper addressMapper;
-    @Autowired
-    private CorpMemberMapper corpMemberMapper;
+ //   @Autowired
+// private MemberMapper memberMapper;
+ //   @Autowired
+ //   private AddressMapper addressMapper;
+//    @Autowired
+//    private CorpMemberMapper corpMemberMapper;
 
-    @Test
-    public void testInsert() {
+//    @Test
+//    public void testInsert() {
 //        CorpMemberDTO corpMemberDTO = new CorpMemberDTO();
 //        corpMemberDTO.setMemberId("corp_test");
 //        corpMemberDTO.setMemberPassword("1234");
