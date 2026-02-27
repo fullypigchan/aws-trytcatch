@@ -56,7 +56,7 @@ public class CorpMemberTests {
 //        corpMemberDTO.setId(memberVO.getId());
 //
 //        corpMemberMapper.insert(corpMemberDTO.toCorpVO());
-    }
+//    }
 
     // DTO → AddressVO 변환: addressId가 AddressVO.id로 매핑되는지
 //    @Test
