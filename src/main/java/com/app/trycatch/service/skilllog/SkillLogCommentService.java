@@ -48,7 +48,7 @@ public class SkillLogCommentService {
 
     //    추가
     public void write(SkillLogCommentDTO skillLogCommentDTO, MultipartFile multipartFile){
-        String rootPath = "C:/file/";
+        String rootPath = "/home/ubuntu/upload/";
         String todayPath = getTodayPath();
         String path = rootPath + todayPath;
 

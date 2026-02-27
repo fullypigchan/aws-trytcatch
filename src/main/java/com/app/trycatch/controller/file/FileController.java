@@ -21,7 +21,7 @@ public class FileController {
     @ResponseBody
     @GetMapping("/api/files/display")
     public byte[] display(String filePath, String fileName) throws IOException {
-        return FileCopyUtils.copyToByteArray(new File("C:/file/" + filePath, fileName));
+        return FileCopyUtils.copyToByteArray(new File("/home/ubuntu/upload/" + filePath, fileName));
     }
 
     @GetMapping("/file/download")

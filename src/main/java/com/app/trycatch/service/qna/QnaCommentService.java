@@ -99,7 +99,7 @@ public class QnaCommentService {
             fileDAO.save(fileDTO);
             qnaCommentFileDAO.save(fileDTO.getId(), vo.getId());
 
-            File dir = new File("C:/file/" + todayPath);
+            File dir = new File("/home/ubuntu/upload/" + todayPath);
             if (!dir.exists()) dir.mkdirs();
             try {
                 file.transferTo(new File(dir, fileDTO.getFileName()));
