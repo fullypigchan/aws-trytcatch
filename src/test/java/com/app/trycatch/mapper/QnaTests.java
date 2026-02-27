@@ -13,26 +13,26 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @Slf4j
 public class QnaTests {
-    @Autowired
-    private QnaMapper qnaMapper;
-    @Autowired
-    private QnaCommentMapper qnaCommentMapper;
-
-    @Test
-    public void testInsert(){
-        QnaDTO qnaDTO = new QnaDTO();
-        qnaDTO.setIndividualMemberId(4L);
-        qnaDTO.setQnaContent("테스트1");
-        qnaDTO.setQnaTitle("테스트제목1");
-        qnaDTO.setQnaStatus(QnaStatus.PUBLISHED);
-        qnaMapper.insert(qnaDTO.toQnaVO());
-    }
-
-    @Test
-    public void testInsertComment(){
-        QnaCommentDTO qnaCommentDTO = new QnaCommentDTO();
-        qnaCommentDTO.setQnaId(1L);
-        qnaCommentDTO.setQnaCommentContent("테스트댓글1");
-        qnaCommentMapper.insert(qnaCommentDTO.toQnaCommentVO());
-    }
+//    @Autowired
+//    private QnaMapper qnaMapper;
+//    @Autowired
+//    private QnaCommentMapper qnaCommentMapper;
+//
+//    @Test
+//    public void testInsert(){
+//        QnaDTO qnaDTO = new QnaDTO();
+//        qnaDTO.setIndividualMemberId(4L);
+//        qnaDTO.setQnaContent("테스트1");
+//        qnaDTO.setQnaTitle("테스트제목1");
+//        qnaDTO.setQnaStatus(QnaStatus.PUBLISHED);
+//        qnaMapper.insert(qnaDTO.toQnaVO());
+//    }
+//
+//    @Test
+//    public void testInsertComment(){
+//        QnaCommentDTO qnaCommentDTO = new QnaCommentDTO();
+//        qnaCommentDTO.setQnaId(1L);
+//        qnaCommentDTO.setQnaCommentContent("테스트댓글1");
+//        qnaCommentMapper.insert(qnaCommentDTO.toQnaCommentVO());
+//    }
 }

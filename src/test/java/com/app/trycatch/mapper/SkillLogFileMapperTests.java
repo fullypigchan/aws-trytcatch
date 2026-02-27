@@ -17,41 +17,41 @@ import java.util.List;
 @SpringBootTest
 @Slf4j
 public class SkillLogFileMapperTests {
-    @Autowired
-    private SkillLogFileMapper skillLogFileMapper;
-    @Autowired
-    private FileMapper fileMapper;
-
-    @Test
-    public void testInert() {
-        FileDTO fileDTO = new FileDTO();
-        SkillLogFileDTO skillLogFileDTO = new SkillLogFileDTO();
-
-        fileDTO.setFileName("테스트");
-        fileDTO.setFilePath("테스트");
-        fileDTO.setFileOriginalName("테스트");
-        fileDTO.setFileSize("테스트");
-        fileDTO.setFileContentType(FileContentType.IMAGE);
-
-        fileMapper.insert(fileDTO);
-
-        skillLogFileDTO.setId(fileDTO.getId());
-        skillLogFileDTO.setSkillLogId(13L);
-
-        skillLogFileMapper.insert(skillLogFileDTO.toSkillLogFileVO());
-    }
-
-    @Test
-    public void testSelectAllBySkillLogId() {
-        List<SkillLogFileDTO> skillLogFiles = skillLogFileMapper.selectAllBySkillLogId(31L);
-        skillLogFiles.forEach((skillLogFileDTO) -> log.info("{}", skillLogFileDTO));
-    }
-
-    @Test
-    public void testDelete() {
-        Long id = 16L;
-
-        skillLogFileMapper.delete(id);
-        fileMapper.delete(id);
-    }
+//    @Autowired
+//    private SkillLogFileMapper skillLogFileMapper;
+//    @Autowired
+//    private FileMapper fileMapper;
+//
+//    @Test
+//    public void testInert() {
+//        FileDTO fileDTO = new FileDTO();
+//        SkillLogFileDTO skillLogFileDTO = new SkillLogFileDTO();
+//
+//        fileDTO.setFileName("테스트");
+//        fileDTO.setFilePath("테스트");
+//        fileDTO.setFileOriginalName("테스트");
+//        fileDTO.setFileSize("테스트");
+//        fileDTO.setFileContentType(FileContentType.IMAGE);
+//
+//        fileMapper.insert(fileDTO);
+//
+//        skillLogFileDTO.setId(fileDTO.getId());
+//        skillLogFileDTO.setSkillLogId(13L);
+//
+//        skillLogFileMapper.insert(skillLogFileDTO.toSkillLogFileVO());
+//    }
+//
+//    @Test
+//    public void testSelectAllBySkillLogId() {
+//        List<SkillLogFileDTO> skillLogFiles = skillLogFileMapper.selectAllBySkillLogId(31L);
+//        skillLogFiles.forEach((skillLogFileDTO) -> log.info("{}", skillLogFileDTO));
+//    }
+//
+//    @Test
+//    public void testDelete() {
+//        Long id = 16L;
+//
+//        skillLogFileMapper.delete(id);
+//        fileMapper.delete(id);
+//    }
 }

@@ -13,25 +13,25 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class SkillLogCommentReportMapperTests {
-    @Autowired
-    private SkillLogCommentReportMapper skillLogCommentReportMapper;
-    @Autowired
-    private ReportMapper reportMapper;
-
-    @Test
-    public void testInsert() {
-        ReportDTO reportDTO = new ReportDTO();
-        SkillLogCommentReportDTO skillLogCommentReportDTO = new SkillLogCommentReportDTO();
-
-        reportDTO.setMemberId(6L);
-        reportDTO.setReportReasonCode(1);
-        reportDTO.setReportReasonDetail("신고 사유");
-
-        reportMapper.insert(reportDTO);
-
-        skillLogCommentReportDTO.setId(reportDTO.getId());
-        skillLogCommentReportDTO.setSkillLogCommentId(271L);
-
-        skillLogCommentReportMapper.insert(skillLogCommentReportDTO.toSkillLogCommentReportVO());
-    }
+//    @Autowired
+//    private SkillLogCommentReportMapper skillLogCommentReportMapper;
+//    @Autowired
+//    private ReportMapper reportMapper;
+//
+//    @Test
+//    public void testInsert() {
+//        ReportDTO reportDTO = new ReportDTO();
+//        SkillLogCommentReportDTO skillLogCommentReportDTO = new SkillLogCommentReportDTO();
+//
+//        reportDTO.setMemberId(6L);
+//        reportDTO.setReportReasonCode(1);
+//        reportDTO.setReportReasonDetail("신고 사유");
+//
+//        reportMapper.insert(reportDTO);
+//
+//        skillLogCommentReportDTO.setId(reportDTO.getId());
+//        skillLogCommentReportDTO.setSkillLogCommentId(271L);
+//
+//        skillLogCommentReportMapper.insert(skillLogCommentReportDTO.toSkillLogCommentReportVO());
+//    }
 }

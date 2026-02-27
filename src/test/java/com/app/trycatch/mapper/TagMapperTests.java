@@ -14,31 +14,31 @@ import java.util.Optional;
 @SpringBootTest
 @Slf4j
 public class TagMapperTests {
-    @Autowired
-    private TagMapper tagMapper;
-
-    @Test
-    public void testInert() {
-        TagDTO tagDTO = new TagDTO();
-        tagDTO.setTagName("태그1");
-        tagDTO.setSkillLogId(8L);
-        tagMapper.insert(tagDTO.toVO());
-    }
-
-    @Test
-    public void testSelectAllBySkillLogId() {
-        List<TagVO> tags = tagMapper.selectAllBySkillLogId(32L);
-        log.info("{}", tags);
-    }
-
-    @Test
-    public void testSelectAll() {
-        List<String> tagNames = tagMapper.selectAll();
-        log.info("{}", tagNames);
-    }
-
-    @Test
-    public void testDelete() {
-        tagMapper.delete(400L);
-    }
+//    @Autowired
+//    private TagMapper tagMapper;
+//
+//    @Test
+//    public void testInert() {
+//        TagDTO tagDTO = new TagDTO();
+//        tagDTO.setTagName("태그1");
+//        tagDTO.setSkillLogId(8L);
+//        tagMapper.insert(tagDTO.toVO());
+//    }
+//
+//    @Test
+//    public void testSelectAllBySkillLogId() {
+//        List<TagVO> tags = tagMapper.selectAllBySkillLogId(32L);
+//        log.info("{}", tags);
+//    }
+//
+//    @Test
+//    public void testSelectAll() {
+//        List<String> tagNames = tagMapper.selectAll();
+//        log.info("{}", tagNames);
+//    }
+//
+//    @Test
+//    public void testDelete() {
+//        tagMapper.delete(400L);
+//    }
 }

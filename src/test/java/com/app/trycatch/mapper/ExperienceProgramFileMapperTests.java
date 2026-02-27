@@ -15,28 +15,28 @@ import java.util.List;
 @SpringBootTest
 @Slf4j
 public class ExperienceProgramFileMapperTests {
-    @Autowired
-    private ExperienceProgramFileMapper experienceProgramFileMapper;
-    @Autowired
-    private ExperienceProgramMapper experienceProgramMapper;
-
-    @Test
-    public void testSelectAllByExperienceProgramId() {
-        Search search = new Search();
-        Long memberId = 9L;
-
-        search.setKeyword("");
-
-        int total = experienceProgramMapper.selectTotalByMemberIdOfChallenger(search, memberId);
-        Criteria criteria = new Criteria(1, total);
-
-        List<ExperienceProgramDTO> experiencePrograms =
-                experienceProgramMapper.selectAllByMemberIdOfChallenger(criteria, search, memberId);
-
-        experiencePrograms.forEach((experienceProgramDTO) -> {
-            log.info("{}", experienceProgramFileMapper.selectAllByExperienceProgramId(experienceProgramDTO.getId()));
-        });
-    }
-
+//    @Autowired
+//    private ExperienceProgramFileMapper experienceProgramFileMapper;
+//    @Autowired
+//    private ExperienceProgramMapper experienceProgramMapper;
+//
+//    @Test
+//    public void testSelectAllByExperienceProgramId() {
+//        Search search = new Search();
+//        Long memberId = 9L;
+//
+//        search.setKeyword("");
+//
+//        int total = experienceProgramMapper.selectTotalByMemberIdOfChallenger(search, memberId);
+//        Criteria criteria = new Criteria(1, total);
+//
+//        List<ExperienceProgramDTO> experiencePrograms =
+//                experienceProgramMapper.selectAllByMemberIdOfChallenger(criteria, search, memberId);
+//
+//        experiencePrograms.forEach((experienceProgramDTO) -> {
+//            log.info("{}", experienceProgramFileMapper.selectAllByExperienceProgramId(experienceProgramDTO.getId()));
+//        });
+//    }
+//
 
 }

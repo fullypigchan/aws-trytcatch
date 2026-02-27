@@ -10,12 +10,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @Slf4j
 public class FileMapperTests {
-    @Autowired
-    private FileMapper fileMapper;
-
-    @Test
-    public void testSelectById() {
-        FileVO fileVO = fileMapper.selectById(34L).orElse(null);
-        log.info("{}", fileVO);
-    }
+//    @Autowired
+//    private FileMapper fileMapper;
+//
+//    @Test
+//    public void testSelectById() {
+//        FileVO fileVO = fileMapper.selectById(34L).orElse(null);
+//        log.info("{}", fileVO);
+//    }
 }

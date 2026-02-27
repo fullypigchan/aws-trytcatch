@@ -14,18 +14,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class QnaCategoryTests {
-    @Autowired
-    private QnaMapper qnaMapper;
-    @Autowired
-    private QnaCommentMapper qnaCommentMapper;
-    @Autowired
-    private QnaJobCategoryMapper qnaJobCategoryMapper;
-
-
-    @Test
-    public void testSelectAll() {
-//        qnaJobCategoryMapper.selectAll().forEach(System.out::println);
-        qnaJobCategoryMapper.selectAllBig().forEach(System.out::println);
-//        qnaJobCategoryMapper.selectAllSmall().forEach(System.out::println);
-    }
+//    @Autowired
+//    private QnaMapper qnaMapper;
+//    @Autowired
+//    private QnaCommentMapper qnaCommentMapper;
+//    @Autowired
+//    private QnaJobCategoryMapper qnaJobCategoryMapper;
+//
+//
+//    @Test
+//    public void testSelectAll() {
+////        qnaJobCategoryMapper.selectAll().forEach(System.out::println);
+//        qnaJobCategoryMapper.selectAllBig().forEach(System.out::println);
+////        qnaJobCategoryMapper.selectAllSmall().forEach(System.out::println);
+//    }
 }

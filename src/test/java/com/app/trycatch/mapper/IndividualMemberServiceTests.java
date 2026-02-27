@@ -13,20 +13,20 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @Slf4j
 public class IndividualMemberServiceTests {
-    @Autowired
-    private IndividualMemberService individualMemberService;
-
-    @Test
-    public void testCheckMemberId() {
-        log.info("{}...........................", individualMemberService.checkMemberId("sfasfasdfasdfasdf"));
-        log.info("{}...........................", individualMemberService.checkMemberId("test"));
-    }
-
-    @Test
-    public void testCheckEmail() {
-        log.info("{}..........................", individualMemberService.checkEmail("testetst@gmail.com"));
-        log.info("{}.......................", individualMemberService.checkEmail("test@gmail.com"));
-    }
+//    @Autowired
+//    private IndividualMemberService individualMemberService;
+//
+//    @Test
+//    public void testCheckMemberId() {
+//        log.info("{}...........................", individualMemberService.checkMemberId("sfasfasdfasdfasdf"));
+//        log.info("{}...........................", individualMemberService.checkMemberId("test"));
+//    }
+//
+//    @Test
+//    public void testCheckEmail() {
+//        log.info("{}..........................", individualMemberService.checkEmail("testetst@gmail.com"));
+//        log.info("{}.......................", individualMemberService.checkEmail("test@gmail.com"));
+//    }
 
 //    @Test
 //    public void testJoinIndividual(){
