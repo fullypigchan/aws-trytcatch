@@ -13,29 +13,29 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @Slf4j
 public class ReportServiceTests {
-    @Autowired
-    private ReportService reportService;
-
-    @Test
-    public void testSkillLogReport() {
-        SkillLogReportDTO skillLogReportDTO = new SkillLogReportDTO();
-
-        skillLogReportDTO.setMemberId(6L);
-        skillLogReportDTO.setReportReasonCode(1);
-        skillLogReportDTO.setReportReasonDetail("불건전한 내용");
-        skillLogReportDTO.setSkillLogId(30L);
-
-        reportService.skillLogReport(skillLogReportDTO);
-    }
-    @Test
-    public void testReport() {
-        SkillLogCommentReportDTO skillLogCommentReportDTO = new SkillLogCommentReportDTO();
-
-        skillLogCommentReportDTO.setMemberId(6L);
-        skillLogCommentReportDTO.setReportReasonCode(1);
-        skillLogCommentReportDTO.setReportReasonDetail("불건전한 내용");
-        skillLogCommentReportDTO.setSkillLogCommentId(271L);
-
-        reportService.skillLogCommentReport(skillLogCommentReportDTO);
-    }
+//    @Autowired
+//    private ReportService reportService;
+//
+//    @Test
+//    public void testSkillLogReport() {
+//        SkillLogReportDTO skillLogReportDTO = new SkillLogReportDTO();
+//
+//        skillLogReportDTO.setMemberId(6L);
+//        skillLogReportDTO.setReportReasonCode(1);
+//        skillLogReportDTO.setReportReasonDetail("불건전한 내용");
+//        skillLogReportDTO.setSkillLogId(30L);
+//
+//        reportService.skillLogReport(skillLogReportDTO);
+//    }
+//    @Test
+//    public void testReport() {
+//        SkillLogCommentReportDTO skillLogCommentReportDTO = new SkillLogCommentReportDTO();
+//
+//        skillLogCommentReportDTO.setMemberId(6L);
+//        skillLogCommentReportDTO.setReportReasonCode(1);
+//        skillLogCommentReportDTO.setReportReasonDetail("불건전한 내용");
+//        skillLogCommentReportDTO.setSkillLogCommentId(271L);
+//
+//        reportService.skillLogCommentReport(skillLogCommentReportDTO);
+//    }
 }

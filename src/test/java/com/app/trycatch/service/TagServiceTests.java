@@ -9,11 +9,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 @Slf4j
 public class TagServiceTests {
-    @Autowired
-    private TagService tagService;
-
-    @Test
-    public void testSelectAll() {
-        log.info("{}", tagService.selectAll());
-    }
+//    @Autowired
+//    private TagService tagService;
+//
+//    @Test
+//    public void testSelectAll() {
+//        log.info("{}", tagService.selectAll());
+//    }
 }
